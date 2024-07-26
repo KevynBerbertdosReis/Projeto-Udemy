@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro-content{
+    position: relative;
+    /*top: -8rem;*/
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+.top3-center{
+    margin-top: 5rem;
+}
+
+
+.intro-img img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.top3-content{
+    height: 110vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 64rem;
+    text-align: center;
+}
+
+.grid-one-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.grid-main-heading h2{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 4rem;
+    position: relative;
+    padding: 7rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.gallery-img{
+    width: 140%;
+    max-width: 15rem;
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+     transition: all 400ms ease-in-out; 
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.1) rotate(3deg);
+}
+
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.form-group input, 
+.form-group textarea{
+    border: none;
+    background: var(--cor-branca);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+
+.form-group input:focus, 
+.form-group textarea:focus:hover{
+    box-shadow: 0 0 15px 2px;
+    color: var(--cor-secundaria);
+   outline: none;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--cor-branca);
+    background: none;
+    color: var(--cor-branca);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background-color: var(--cor-branca);
+    color: var(--cor-primaria);
+}
+
+.form-group ::placeholder{
+    color: gray
+}
+
+
+.footer{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "JosefinSans", sans-serif;
+}
+
+.footer a{
+    color: var(--cor-primaria);
+}
+
+.skull{
+    color: rgba(21, 6, 161, 0.904);
+}
+
+.footer p{
+    margin: 0;
+    padding: 2.5rem;
+}
+/*white-bg*\
+// colspan="3"//
