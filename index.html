@@ -21,14 +21,17 @@
 
 
 <body class="main-bg section">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false">
                 <a href="#home">LOGO</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#intro">História</a></li>
                     <li><a href="#grid-one">Habilidades</a></li>
                     <li><a href="#gallery">galeria</a></li>
@@ -86,16 +89,19 @@
             <div class="grid">
                 <article>
                     <h3>PASSIVA</h3>
-                    <p>ASCENSÃO DAS TREVAS: Mordekaiser recebe uma poderosa aura de dano e Velocidade de Movimento depois de acertar 3 Ataques ou Habilidades contra Campeões inimigos ou monstros.</p>
+                    <p>ASCENSÃO DAS TREVAS: Mordekaiser recebe uma poderosa aura de dano e Velocidade de Movimento
+                        depois de acertar 3 Ataques ou Habilidades contra Campeões inimigos ou monstros.</p>
                 </article>
-                
+
                 <article>
                     <h3>Q</h3>
-                    <p>OBLITERAR: Mordekaiser golpeia o chão com sua maça, causando dano a cada inimigo atingido. O dano é aumentado quando atingir um único inimigo.</p>
+                    <p>OBLITERAR: Mordekaiser golpeia o chão com sua maça, causando dano a cada inimigo atingido. O dano
+                        é aumentado quando atingir um único inimigo.</p>
                 </article>
                 <article>
                     <h3>W</h3>
-                    <p>INDESTRUTÍVEL: Mordekaiser armazena o dano que ele causa e recebe para criar um escudo. Ele pode consumir o escudo para se curar.</p>
+                    <p>INDESTRUTÍVEL: Mordekaiser armazena o dano que ele causa e recebe para criar um escudo. Ele pode
+                        consumir o escudo para se curar.</p>
                 </article>
                 <article>
                     <h3>E</h3>
@@ -103,7 +109,9 @@
                 </article>
                 <article>
                     <h3>R</h3>
-                    <p>REINO DA MORTE: Mordekaiser arrasta sua vítima com ele para uma dimensão diferente e rouba uma porção de seus atributos. Se abater sua vítima, ele mantém os atributos até que ela ressurja.</p>
+                    <p>REINO DA MORTE: Mordekaiser arrasta sua vítima com ele para uma dimensão diferente e rouba uma
+                        porção de seus atributos. Se abater sua vítima, ele mantém os atributos até que ela ressurja.
+                    </p>
                 </article>
             </div>
         </div>
@@ -117,18 +125,21 @@
                 <div class="gallery-img">
                     <a href="https://www.uhdpaper.com/2022/12/ashen-graveknight-4k-8k-6301j.html?m=0" target="_blank">
                         <img src="/assets/img/cavaleiro das cinzas_346x194.jpeg"
-                        alt="skin mordekaiser cavaleiro das cinzas"></a>
+                            alt="skin mordekaiser cavaleiro das cinzas"></a>
                 </div>
                 <div class="gallery-img">
-                    <a href="https://www.uhdpaper.com/2023/09/old-god-mordekaiser-lol-skin-4k-8k-1761m.html?m=0" target="_blank">
+                    <a href="https://www.uhdpaper.com/2023/09/old-god-mordekaiser-lol-skin-4k-8k-1761m.html?m=0"
+                        target="_blank">
                         <img src="/assets/img/Deus antigo_410x230.jpeg" alt="skin mordekaiser deus antigo"></a>
                 </div>
                 <div class="gallery-img">
-                    <a href="https://www.uhdpaper.com/2019/05/lord-mordekaiser-new-splash-art-lol-4k.html" target="_blank">
+                    <a href="https://www.uhdpaper.com/2019/05/lord-mordekaiser-new-splash-art-lol-4k.html"
+                        target="_blank">
                         <img src="/assets/img/lorde_mordekas_328x191.jpeg" alt="skin lorde mordekaiser"></a>
                 </div>
                 <div class="gallery-img">
-                    <a href="https://www.uhdpaper.com/2019/05/pentakill-mordekaiser-new-splash-art.html" target="_blank">
+                    <a href="https://www.uhdpaper.com/2019/05/pentakill-mordekaiser-new-splash-art.html"
+                        target="_blank">
                         <img src="/assets/img/pentakill_346x194.jpeg" alt="skin mordekaiser pentakill"></a>
                 </div>
                 <div class="gallery-img">
@@ -136,7 +147,8 @@
                         <img src="/assets/img/projeto_410x230.jpeg" alt="skin mordekaiser projeto"></a>
                 </div>
                 <div class="gallery-img">
-                    <a href="https://www.uhdpaper.com/2022/02/high-noon-mordekaiser-skin-4k-8k-741h.html" target="_blank">
+                    <a href="https://www.uhdpaper.com/2022/02/high-noon-mordekaiser-skin-4k-8k-741h.html"
+                        target="_blank">
                         <img src="/assets/img/velho oeste_307x173.jpeg" alt="skin mordekaiser velho oeste"></a>
                 </div>
             </div>
@@ -150,8 +162,8 @@
                 <h2>Kevyn Berbert dos Reis</h2>
                 <p>falar um pouco sobre mim</p>
             </div>
-            <div class="intro-img">
-                <img src="/assets/img/foto kevyn.jpg" alt="Minha foto de perfil do facebook">
+            <div class="perfil-img">
+                <img src="/assets/img/kevyn3.jpg" alt="Minha foto de perfil do facebook">
             </div>
             <div class="contact-form">
                 <fieldset class="form-grid">
@@ -177,20 +189,23 @@
 
                     <div class="form-group full-width">
                         <label for="message">Message</label>
-                       <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
 
                     <div class="form-group full-width">
                         <button type="submit">Send message</button>
-                        
+
                     </div>
                 </fieldset>
             </div>
         </div>
     </section>
     <footer id="footer" class="footer white-bg">
-        <p><a href="https://www.instagram.com/kevyndreis18/" target="_blank">Feito por <span class="skull">➔</span> kevyn</a></p>
+        <p><a href="https://www.instagram.com/kevyndreis18/" target="_blank">Feito por <span class="skull">➔</span>
+                kevyn</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">⮙</a>
 
 </body>
 
