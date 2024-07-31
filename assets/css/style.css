@@ -258,6 +258,22 @@
     .close-menu:checked~.close-menu-label::after{
         content: '×';
     }
+
+    .perfil-img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .intro-text-content h2{
+        font-size: 2rem;
+    }
+    .top3-center, h2{
+        font-size: 2rem;
+    }
+
+    .grid-main-heading, h2{
+        font-size: 2rem;
+    }
 }
 /*white-bg*\
 // colspan="3"//
